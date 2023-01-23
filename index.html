@@ -7,7 +7,9 @@
   <body>
     <header class="page-header">
       <div class="page-header-wrapper">
-        <a class="header-logo" href="index.html">Device</a>
+        <a class="header-logo" href="index.html">
+          <img class="logo" src="#" alt="Логотип">
+        </a>
         <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
           <label for="header-search"></label>
           <input type="search" name="header-search" id="header-search" placeholder="Поиск по сайту">
@@ -72,6 +74,10 @@
         <h2 class="visually-hidden">
           Популярные товары
         </h2>
+        <div class="slider-arrow">
+          <button class="slider-arrow-left" type="button">Назад</button>
+          <button class="slider-arrow-right" type="button">Вперед</button>
+        </div>
         <div class="slider-buttons">
           <button class="slider-btn"></button>
           <button class="slider-btn"></button>
@@ -150,43 +156,51 @@
           <li class="product-item">
             <a class="product-list" href="#">
               <img src="#" alt="Очки виртуальной реальности">
+              <h3>Виртуальная реальность</h3>
             </a>
-            <h3>Виртуальная реальность</h3>
           </li>
           <li class="product-item">
             <a class="product-list" href="#">
               <img src="#" alt="Моноподы для селфи">
+              <h3>Моноподы для селфи</h3>
             </a>
-            <h3>Моноподы для селфи</h3>
           </li>
           <li class="product-item">
             <a class="product-list" href="#">
               <img src="#" alt="Экшн-камеры">
+              <h3>Экшн-камеры</h3>
             </a>
-            <h3>Экшн-камеры</h3>
           </li>
           <li class="product-item">
             <a class="product-list" href="#">
               <img src="#" alt="Фитнес-браслеты">
+              <h3>Фитнес-браслеты</h3>
             </a>
-            <h3>Фитнес-браслеты</h3>
           </li>
           <li class="product-item">
             <a class="product-list" href="#">
               <img src="#" alt="Умные часы">
+              <h3>Умные часы</h3>
             </a>
-            <h3>Умные часы</h3>
           </li>
           <li class="product-item">
             <a class="product-list" href="#">
               <img src="#" alt="Квадрокоптеры">
+              <h3>Квадрокоптеры</h3>
             </a>
-            <h3>Квадрокоптеры</h3>
           </li>
         </ul>
       </section>
       <section class="service">
         <h2 class="visually-hidden">Услуги Интернет-магазина</h2>
+        <input class="visually-hidden" type="radio" id="slider-delivery" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="slider-warranty" name="toggle">
+        <input class="visually-hidden" type="radio" id="slider-credit" name="toggle">
+        <div class="service-slider-controls">
+          <label for="slider-delivery">Доставка</label>
+          <label for="slider-warranty">Гарантия</label>
+          <label for="slider-credit">Кредит</label>
+        </div>
         <ul class="service-list">
           <li class="service-item">
             <h3 class="service-title">Доставка</h3>
@@ -214,9 +228,9 @@
           </li>
         </ul>
       </section>
-      <div class="advantage">
+      <a class="advantage">
         Доставим редкий товар под заказ
-      </div>
+      </a>
       <section class="company-info">
         <h2 class="visually-hidden">Информация и контакты компании</h2>
         <section class="about-company">
@@ -241,13 +255,13 @@
           </p>
           <h3 class="contacts-info">Интернет-магазин «Девайс»</h3>
           <p class="adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <p class="phone">+7 (812) 812-12-12</p>
+          <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <h3 class="contacts-info">Время работы</h3>
           <p class="working-time">
             пн—пт: с 10:00 до 22:00
             сб—вс: с 10:00 до 19:00
           </p>
-          <a class="contacts-link">Напишите нам</a>
+          <a class="contacts-link" href="#">Напишите нам</a>
         </section>
       </section>
       <section class="subscription">
@@ -257,7 +271,7 @@
           длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <div class="subscription-form">
           <form class="subscription-form-email" action="https://echo.htmlacademy.ru" method="post">
-            <input type="email" placeholder="Ваш e-mail">
+            <input type="email" placeholder="Ваш e-mail" name="email">
             <button type="submit">Подписаться</button>
           </form>
         </div>
@@ -265,7 +279,9 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p class="footer-logo">device</p>
+      <a class="footer-logo" href="index.html">
+        <img class="footer-logo-img" src="#" alt="логотип">
+      </a>
       <address class="footer-address">
         <p class="footer-address-text">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
@@ -283,7 +299,7 @@
             <a class="footer-services-link" href="#">Контакты</a>
           </li>
         </ul>
-        <a class="footer-phone" href="#">Тел.: +7 (812) 812-12-12</a>
+        <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </div>
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>

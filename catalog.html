@@ -7,7 +7,9 @@
   <body>
     <header class="page-header">
       <div class="page-header-wrapper">
-        <a class="header-logo" href="index.html">Device</a>
+        <a class="header-logo" href="index.html">
+          <img class="logo" src="#" alt="Логотип">
+        </a>
         <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
           <label for="header-search"></label>
           <input type="search" name="header-search" id="header-search" placeholder="Текст поиска">
@@ -57,7 +59,7 @@
           <a class="breadcrumbs-link" href="#">Каталог товаров</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
+          <a class="breadcrumbs-link">Моноподы для селфи</a>
         </li>
       </ul>
       <section class="catalog-products">
@@ -116,38 +118,40 @@
         <h2 class="select-control-title">сортировка:</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Популярные</option>
+          <option value="popular">Дорогие</option>
+          <option value="popular">Дешевые</option>
         </select>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link">
               <img class="product-card-image" src="#" alt="Любительская селфи-палка">
               <h3 class="product-card-title">Любительская селфи-палка</h3>
+              <b class="product-card-price">500 ₽</b>
             </a>
-            <b class="product-card-price">500 ₽</b>
           </li>
           <li class="product-card">
             <a class="product-card-link">
               <img class="product-card-image" src="#" alt="Профессиональная селфи-палка">
               <h3 class="product-card-title">Профессиональная селфи-палка </h3>
+              <b class="product-card-price">1 500 ₽</b>
             </a>
-            <b class="product-card-price">1 500 ₽</b>
           </li>
           <li class="product-card">
             <a class="product-card-link">
               <img class="product-card-image" src="#" alt="Непотопляемая селфи-палкаа">
               <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+              <b class="product-card-price">2 500 ₽</b>
             </a>
-            <b class="product-card-price">2 500 ₽</b>
           </li>
           <li class="product-card">
             <a class="product-card-link">
               <img class="product-card-image" src="#" alt="Селфи-палка «Следуй за мной»">
               <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+              <b class="product-card-price">1 500 ₽</b>
             </a>
-            <b class="product-card-price">1 500 ₽</b>
           </li>
         </ul>
-        <button class="button pagination-show-more" type="button">Показать ещё</button>
+        <button class="button pagination-show-more" type="button">Загрузить ещё</button>
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disabled">
@@ -178,7 +182,9 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p class="footer-logo">device</p>
+      <a class="footer-logo" href="index.html">
+        <img class="footer-logo-img" src="#" alt="логотип">
+      </a>
       <address class="footer-address">
         <p class="footer-address-text">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
@@ -196,7 +202,7 @@
             <a class="footer-services-link" href="#">Контакты</a>
           </li>
         </ul>
-        <a class="footer-phone" href="#">Тел.: +7 (812) 812-12-12</a>
+        <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </div>
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
