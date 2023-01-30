@@ -51,13 +51,14 @@ body {
 
 .user-navigation-link {
   font-family: "Rubik", sans-serif;
-  color: #000000;
   text-decoration: none;
+  color: #000000;
 }
 
 .navigation-link {
   font-family: "Raleway", sans-serif;
   line-height: 21px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
@@ -74,13 +75,18 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
+  font-weight: 800;
   color: #000000;
 }
 
 .button {
   font-family: "Raleway", sans-serif;
+  font-size: 18px;
   line-height: 21px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
+  color: #000000;
   background: #FFE17F;
 }
 
@@ -106,11 +112,15 @@ body {
 
 .product-list {
   font-family: "Raleway", sans-serif;
-  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   text-decoration: none;
+  color: #000000;
+}
+
+.product-title {
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 .service-btn {
@@ -135,6 +145,7 @@ body {
   font-size: 20px;
   line-height: 23px;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
   color: #000000;
   background-color: #F0F0F0;
 }
@@ -188,6 +199,7 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 0.2em;
   color: #FFFFFF;
 }
 
@@ -195,7 +207,7 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
-  text-decoration: none;
+  text-decoration: underline;
   color: #FFFFFF;
 }
 
@@ -209,7 +221,7 @@ body {
 
 .breadcrumbs-link {
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
@@ -220,10 +232,11 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  letter-spacing: -0.02em;
   color: #000000;
 }
 
-.control-input {
+.catalog-filter-item {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
@@ -235,6 +248,8 @@ body {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #000000;
 }
 
 .product-card-title {
@@ -242,6 +257,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  letter-spacing: -0.02em;
   color: #000000;
 }
 
@@ -258,6 +274,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
   color: #000000;
 }
 
@@ -273,6 +290,7 @@ body {
   opacity: 0.3;
   color: #444444;
   text-decoration: none;
+  letter-spacing: 0.2em;
 }
 
 .pagination-next {
