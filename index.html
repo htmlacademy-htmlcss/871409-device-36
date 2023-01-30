@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -19,15 +20,15 @@
         </form>
         </div>
         <nav class="navigation">
-          <ul class="navigation-list navigation-user">
+          <ul class="navigation-list user-navigation">
             <li>
-              <a class="navigation-link" href="#">Войти</a>
+              <a class="user-navigation-link" href="#">Войти</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Сравнить</a>
+              <a class="user-navigation-link" href="#">Сравнить</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Корзина</a>
+              <a class="user-navigation-link" href="#">Корзина</a>
             </li>
           </ul>
           <ul class="navigation-list">
@@ -35,22 +36,22 @@
               <a class="navigation-link" href="catalog.html">Каталог товаров</a>
               <ul class="catalog-list">
                 <li class="catalog-item">
-                  <a class="'catalog-item" href="#">Виртуальная реальность</a>"
+                  <a class="catalog-item-link" href="#">Виртуальная реальность</a>
                 </li>
                 <li class="catalog-item">
-                  <a class="'catalog-item" href="catalog.html">Моноподы для селфи</a>"
+                  <a class="catalog-item-link" href="catalog.html">Моноподы для селфи</a>
                 </li>
                 <li class="catalog-item">
-                  <a class="'catalog-item" href="#">Экшн-камеры</a>"
+                  <a class="catalog-item-link" href="#">Экшн-камеры</a>
                 </li>
                 <li class="catalog-item">
-                  <a class="'catalog-item" href="#">Фитнес-браслеты</a>"
+                  <a class="catalog-item-link" href="#">Фитнес-браслеты</a>
                 </li>
                 <li class="catalog-item">
-                  <a class="'catalog-item" href="#">Умные часы</a>"
+                  <a class="catalog-item-link" href="#">Умные часы</a>
                 </li>
                 <li class="catalog-item">
-                  <a class="'catalog-item" href="#">Квадрокоптеры</a>"
+                  <a class="catalog-item-link" href="#">Квадрокоптеры</a>
                 </li>
               </ul>
             </li>
@@ -93,7 +94,7 @@
           <p class="product-description">
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a class="product-details-btn">Подробнее</a>
+          <a class="product-details-btn button">Подробнее</a>
           <table class="product-characteristics">
             <tr>
               <th>800 м</th>
@@ -115,7 +116,7 @@
           <p class="product-description">
             Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
           </p>
-          <a class="product-details-btn">Подробнее</a>
+          <a class="product-details-btn button">Подробнее</a>
           <table class="product-characteristics">
             <tr>
               <th>48 часов</th>
@@ -135,7 +136,7 @@
           <p class="product-description">
             Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
           </p>
-          <a class="product-details-btn">Подробнее</a>
+          <a class="product-details-btn button">Подробнее</a>
           <table class="product-characteristics">
             <tr>
               <th>8,5 м</th>
@@ -156,37 +157,37 @@
           <li class="product-item">
             <a class="product-list" href="#">
               <img src="images/product-virtual-reality.svg" alt="Очки виртуальной реальности" width="97" height="55">
-              <h3>Виртуальная реальность</h3>
+              <h3 class="product-title">Виртуальная реальность</h3>
             </a>
           </li>
           <li class="product-item">
             <a class="product-list" href="#">
               <img src="images/product-monopod.svg" alt="Моноподы для селфи" width="86" height="117">
-              <h3>Моноподы для селфи</h3>
+              <h3 class="product-title">Моноподы для селфи</h3>
             </a>
           </li>
           <li class="product-item">
             <a class="product-list" href="#">
               <img src="images/product-camera.svg" alt="Экшн-камеры" width="71" height="87">
-              <h3>Экшн-камеры</h3>
+              <h3 class="product-title">Экшн-камеры</h3>
             </a>
           </li>
           <li class="product-item">
             <a class="product-list" href="#">
               <img src="images/product-bracelet.svg" alt="Фитнес-браслеты" width="107" height="65">
-              <h3>Фитнес-браслеты</h3>
+              <h3 class="product-title">Фитнес-браслеты</h3>
             </a>
           </li>
           <li class="product-item">
             <a class="product-list" href="#">
               <img src="images/product-smart-clock.svg" alt="Умные часы" width="56" height="98">
-              <h3>Умные часы</h3>
+              <h3 class="product-title">Умные часы</h3>
             </a>
           </li>
           <li class="product-item">
             <a class="product-list" href="#">
               <img src="images/product-quadcopter.svg" alt="Квадрокоптеры" width="132" height="69">
-              <h3>Квадрокоптеры</h3>
+              <h3 class="product-title">Квадрокоптеры</h3>
             </a>
           </li>
         </ul>
@@ -195,13 +196,13 @@
         <h2 class="visually-hidden">Услуги Интернет-магазина</h2>
         <ul class="service-list-btn">
           <li class="service-item-btn">
-            <button class="service-btn">Доставка</button>
+            <button class="service-btn button">Доставка</button>
           </li>
           <li class="service-item-btn">
-            <button class="service-btn">Гарантия</button>
+            <button class="service-btn button">Гарантия</button>
           </li>
           <li class="service-item-btn">
-            <button class="service-btn">Кредит</button>
+            <button class="service-btn button">Кредит</button>
           </li>
         </ul>
         <ul class="service-list">
@@ -249,10 +250,10 @@
             <li class="transport-company-item">СДИК</li>
             <li class="transport-company-item">ТоксБерри</li>
           </ul>
-            <a class="about-company-link" href="#">Подробнее о нас</a>
+            <a class="about-company-link button" href="#" >Подробнее о нас</a>
         </section>
         <section class="contacts">
-          <h2 class="contacts-title">Контакты</h2>
+          <h2 class="about-company-title">Контакты</h2>
           <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис.
             Заодно сможете проверить работоспособность покупки.
           </p>
@@ -264,18 +265,18 @@
             пн—пт: с 10:00 до 22:00
             сб—вс: с 10:00 до 19:00
           </p>
-          <a class="contacts-link" href="#">Напишите нам</a>
+          <a class="about-company-link button" href="#" >Напишите нам</a>
         </section>
       </section>
       <section class="subscription">
         <h2 class="visually-hidden">Оформление подписки</h2>
-        <p class="subscription-slogan"> Подпишитесь на рассылку</p>
+        <p class="subscription-slogan about-company-title"> Подпишитесь на рассылку</p>
         <p class="subscripion-description">Еженедельный дайджест с обзорами новинок,
           длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <div class="subscription-form">
           <form class="subscription-form-email" action="https://echo.htmlacademy.ru" method="post">
             <input type="email" placeholder="Ваш e-mail" name="email">
-            <button type="submit">Подписаться</button>
+            <button class="subscription-button" type="submit">Подписаться</button>
           </form>
         </div>
         <p class="subscription-free">Это бесплатно</p>
