@@ -95,7 +95,7 @@ body {
   color: #000000;
 }
 
-.main-container {
+.main-index {
   flex-grow: 1;
 }
 
@@ -363,17 +363,13 @@ body {
   background-color: #F0F0F0;;
 }
 
-.main-container {
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .catalog-products {
   display: flex;
 }
 
 .catalog-right-column {
   width: 840px;
+  background-color: #FFFFFF;
 }
 
 .catalog-filter {
