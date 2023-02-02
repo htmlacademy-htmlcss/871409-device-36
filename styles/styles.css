@@ -22,7 +22,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -45,14 +53,37 @@ body {
 
 
 .page-header {
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 20px;
   color: #000000;
+}
+
+.page-header-wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: #FFE17F;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-navigation {
+  display: flex;
+  max-width: 500px;
+  list-style-type: none;
 }
 
 .user-navigation-link {
   font-family: "Rubik", sans-serif;
   text-decoration: none;
   color: #000000;
+}
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .navigation-link {
@@ -62,6 +93,23 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+
+.main-index {
+  flex-grow: 1;
+}
+
+.products-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+.slider-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-image-container {
+  width: 560px;
 }
 
 .catalog-item-link {
@@ -77,6 +125,12 @@ body {
   line-height: 50px;
   font-weight: 800;
   color: #000000;
+}
+
+.product-description-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
 }
 
 .button {
@@ -109,6 +163,16 @@ body {
   line-height: 30px;
   color: #FFFFFF;
 }
+.products-catalog {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.product-item {
+  width: 160px;
+}
 
 .product-list {
   font-family: "Raleway", sans-serif;
@@ -121,6 +185,16 @@ body {
 .product-title {
   font-weight: 800;
   letter-spacing: -0.02em;
+}
+
+.service {
+  background-color: #F0F0F0;
+}
+
+.service-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .service-btn {
@@ -136,8 +210,20 @@ body {
 .service-title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
+  font-weight: 800;
   line-height: 50px;
   color: #000000;
+}
+
+.service-info {
+  width: 694px;
+}
+
+.advantage-container {
+  width: 1160px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F0F0F0;
 }
 
 .advantage {
@@ -147,14 +233,28 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #000000;
-  background-color: #F0F0F0;
+}
+
+.company-info-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.about-company {
+  width: 520px;
 }
 
 .about-company-title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
+  font-weight: 800;
   line-height: 50px;
   color: #000000;
+}
+
+.contacts {
+  width: 532px;
 }
 
 .contacts-info {
@@ -173,10 +273,20 @@ body {
   color: #444444;
 }
 
+.subscription {
+  background-color: #F0F0F0;
+}
+
+.subscription-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .subscription-button {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  font-weight: 800;
   text-transform: uppercase;
   color: #000000;
 }
@@ -184,6 +294,11 @@ body {
 .main-footer {
   color: #FFFFFF;
   background-color: #444444;
+}
+
+.main-footer-container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .footer-address-text {
@@ -211,12 +326,28 @@ body {
   color: #FFFFFF;
 }
 
+.main-inner-container {
+  width: 1079px;
+  margin: 0 auto;
+}
+
 .main-inner-title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs-item {
+  margin-right: 36px;
 }
 
 .breadcrumbs-link {
@@ -226,6 +357,24 @@ body {
   line-height: 20px;
   color: #000000;
   text-decoration: none;
+}
+
+.main-wrapper {
+  background-color: #F0F0F0;;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.catalog-right-column {
+  width: 840px;
+  background-color: #FFFFFF;
+}
+
+.catalog-filter {
+  width: 320px;
+  margin-right: 40px;
 }
 
 .catalog-filter-title {
