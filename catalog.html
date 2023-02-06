@@ -6,22 +6,24 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header header-catalog">
       <div class="page-header-wrapper">
-        <a class="header-logo" href="index.html">
-          <img class="logo" src="images/logo.svg" alt="Логотип" width="145" height="36">
-        </a>
+        <div class="header-logo-container">
+          <a class="header-logo" href="index.html">
+            <img class="logo" src="images/logo.svg" alt="Логотип" width="145" height="36">
+          </a>
+        </div>
         <div class="navigation-container">
-          <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
-            <label class="header-search-label" for="header-search"></label>
-            <input class="header-search-input" type="search" name="header-search" id="header-search" placeholder="Поиск по сайту">
-            <div class="header-search-button">
-              <input type="submit" value="Найти">
-            </div>
-          </form>
+          <div class="header-search-container">
+            <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+              <label class="header-search-label" for="header-search"></label>
+              <input class="header-search-input" type="search" name="header-search" id="header-search" placeholder="Поиск по сайту">
+              <button class="header-search-button" type="submit" value="Найти">Найти</button>
+            </form>
+          </div>
           <ul class="user-navigation">
             <li class="navigation-item">
-              <a class="user-navigation-link">Коля Петухов</a>
+              <a class="user-navigation-link" href="#">Коля Петухов</a>
             </li>
             <li class="navigation-item">
               <a class="user-navigation-link" href="#">Сравнить</a>
@@ -65,7 +67,7 @@
             <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
-        </div>
+      </div>
     </header>
 
     <main class="main-inner">
@@ -139,12 +141,14 @@
               <button class="button" type="submit">Показать</button>
             </form>
             <div class="catalog-right-column">
-              <h2 class="select-control-title">сортировка:</h2>
-              <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Популярные</option>
-                <option value="popular">Дорогие</option>
-                <option value="popular">Дешевые</option>
-              </select>
+              <div class="select-control-container">
+                <h2 class="select-control-title">сортировка:</h2>
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">Популярные</option>
+                  <option value="popular">Дорогие</option>
+                  <option value="popular">Дешевые</option>
+                </select>
+              </div>
               <ul class="product-list">
                 <li class="product-card">
                   <a class="product-card-link">
@@ -176,33 +180,31 @@
                 </li>
               </ul>
               <button class="pagination-show-more" type="button">Загрузить ещё</button>
-              <ul class="pagination">
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-prev pagination-disabled">
-                    Назад
-                  </a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-current">1</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">2</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">3</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">...</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">15</a>
-                </li>
-                <li class="pagination-item">
+              <div class="pagination-container">
+                <a class="pagination-link pagination-prev pagination-disabled">
+                  Назад
+                </a>
+                <ul class="pagination">
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-current">1</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">2</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">...</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">15</a>
+                  </li>
+                </ul>
                   <a class="pagination-link pagination-next" href="#">
                     Вперёд
                   </a>
-                </li>
-              </ul>
+                </div>
             </div>
           </section>
         </div>
@@ -210,26 +212,30 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer-container">
-        <a class="footer-logo" href="index.html">
-          <img class="footer-logo-img" src="images/logo-footer.svg" alt="логотип" width="145" height="36">
-        </a>
-        <address class="footer-address">
-          <p class="footer-address-text">
-            Санкт-Петербург, набережная реки Карповки, 5, литера П.
-          </p>
-        </address>
-        <div class="footer-services">
-          <ul class="footer-services-list">
-            <li class="footer-services-item">
-              <a class="footer-services-link" href="#">Доставка</a>
-            </li>
-            <li class="footer-services-item">
-              <a class="footer-services-link" href="#">Гарантия</a>
-            </li>
-            <li class="footer-services-item">
-              <a class="footer-services-link" href="#">Контакты</a>
-            </li>
-          </ul>
+        <div class="footer-logo-container">
+          <a class="footer-logo" href="index.html">
+            <img class="footer-logo-img" src="images/logo-footer.svg" alt="логотип" width="145" height="36">
+          </a>
+        </div>
+        <div class="top-footer">
+          <address class="footer-address">
+            <p class="footer-address-text">
+              Санкт-Петербург, набережная реки Карповки, 5, литера П.
+            </p>
+          </address>
+          <div class="footer-services">
+            <ul class="footer-services-list">
+              <li class="footer-services-item">
+                <a class="footer-services-link" href="#">Доставка</a>
+              </li>
+              <li class="footer-services-item">
+                <a class="footer-services-link" href="#">Гарантия</a>
+              </li>
+              <li class="footer-services-item">
+                <a class="footer-services-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
           <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </div>
         <section class="footer-social">

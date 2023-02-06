@@ -8,19 +8,21 @@
   <body>
     <header class="page-header">
       <div class="page-header-wrapper">
-        <a class="header-logo" href="index.html">
-          <img class="logo" src="images/logo.svg" alt="Логотип" width="145" height="36">
-        </a>
+        <div class="header-logo-container">
+          <a class="header-logo" href="index.html">
+            <img class="logo" src="images/logo.svg" alt="Логотип" width="145" height="36">
+          </a>
+        </div>
         <div class="navigation-container">
-          <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
-            <label class="header-search-label" for="header-search"></label>
-            <input class="header-search-input" type="search" name="header-search" id="header-search" placeholder="Поиск по сайту">
-            <div class="header-search-button">
-              <input type="submit" value="Найти">
-            </div>
-          </form>
+          <div class="header-search-container">
+            <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+              <label class="header-search-label" for="header-search"></label>
+              <input class="header-search-input" type="search" name="header-search" id="header-search" placeholder="Поиск по сайту">
+              <button class="header-search-button" type="submit" value="Найти">Найти</button>
+            </form>
+          </div>
           <ul class="user-navigation">
-            <li>
+            <li class="navigation-item">
               <a class="user-navigation-link" href="#">Войти</a>
             </li>
             <li class="navigation-item">
@@ -100,16 +102,16 @@
                 Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
               </p>
               <a class="product-details-btn button">Подробнее</a>
-              <table class="product-characteristics">
-                <tr>
-                  <th>800 м</th>
-                  <th>50 м</th>
-                </tr>
-                <tr>
-                  <td>Дальность полета</td>
-                  <td>Радиус поражения</td>
-                </tr>
-              </table>
+              <ul class="product-charecteristics-list">
+                <li class="product-charecteristics-item">
+                  <span class="characteristics-title">800 м</span>
+                  <p class="characteristics-description">Дальность полета</p>
+                </li>
+                <li class="product-charecteristics-item">
+                  <span class="characteristics-title">50 м</span>
+                  <p class="characteristics-description">Радиус поражения</p>
+                </li>
+              </ul>
             </div>
           </article>
           <article class="slider-item">
@@ -126,14 +128,12 @@
                 Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
               </p>
               <a class="product-details-btn button">Подробнее</a>
-              <table class="product-characteristics">
-                <tr>
-                  <th>48 часов</th>
-                </tr>
-                <tr>
-                  <td>Без подзарядки</td>
-                </tr>
-              </table>
+              <ul class="product-charecteristics-list">
+                <li class="product-charecteristics-item">
+                  <span class="characteristics-title">48 часов</span>
+                  <p class="characteristics-description">Без подзарядки</p>
+                </li>
+              </ul>
             </div>
           </article>
           <article class="slider-item">
@@ -150,18 +150,20 @@
                 Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
               </p>
               <a class="product-details-btn button">Подробнее</a>
-              <table class="product-characteristics">
-                <tr>
-                  <th>8,5 м</th>
-                  <th>5 кг</th>
-                  <th>Карбон</th>
-                </tr>
-                <tr>
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал</td>
-                </tr>
-              </table>
+              <ul class="product-charecteristics-list">
+                <li class="product-charecteristics-item">
+                  <span class="characteristics-title">8,5 м</span>
+                  <p class="characteristics-description">Длина палки</p>
+                </li>
+                <li class="product-charecteristics-item">
+                  <span class="characteristics-title">5 кг</span>
+                  <p class="characteristics-description">Вес палки</p>
+                </li>
+                <li class="product-charecteristics-item">
+                  <span class="characteristics-title">Карбон</span>
+                  <p class="characteristics-description">Материал</p>
+                </li>
+              </ul>
             </div>
           </article>
         </section>
@@ -170,41 +172,53 @@
           <ul class="products-catalog">
             <li class="product-item">
               <a class="product-list" href="#">
-                <img src="images/product-virtual-reality.svg" alt="Очки виртуальной реальности" width="97" height="55">
+                <div class="catalog-image-container">
+                  <img src="images/product-virtual-reality.svg" alt="Очки виртуальной реальности" width="97" height="55">
+                </div>
                 <h3 class="product-title">Виртуальная реальность</h3>
               </a>
             </li>
             <li class="product-item">
               <a class="product-list" href="#">
-                <img src="images/product-monopod.svg" alt="Моноподы для селфи" width="86" height="117">
+                <div class="catalog-image-container">
+                  <img src="images/product-monopod.svg" alt="Моноподы для селфи" width="86" height="117">
+                </div>
                 <h3 class="product-title">Моноподы для селфи</h3>
               </a>
             </li>
             <li class="product-item">
               <a class="product-list" href="#">
-                <img src="images/product-camera.svg" alt="Экшн-камеры" width="71" height="87">
+                <div class="catalog-image-container">
+                  <img src="images/product-camera.svg" alt="Экшн-камеры" width="71" height="87">
+                </div>
                 <h3 class="product-title">Экшн-камеры</h3>
               </a>
             </li>
             <li class="product-item">
               <a class="product-list" href="#">
-                <img src="images/product-bracelet.svg" alt="Фитнес-браслеты" width="107" height="65">
+                <div class="catalog-image-container">
+                  <img src="images/product-bracelet.svg" alt="Фитнес-браслеты" width="107" height="65">
+                </div>
                 <h3 class="product-title">Фитнес-браслеты</h3>
               </a>
             </li>
             <li class="product-item">
               <a class="product-list" href="#">
-                <img src="images/product-smart-clock.svg" alt="Умные часы" width="56" height="98">
+                <div class="catalog-image-container">
+                  <img src="images/product-smart-clock.svg" alt="Умные часы" width="56" height="98">
+                </div>
                 <h3 class="product-title">Умные часы</h3>
               </a>
             </li>
             <li class="product-item">
               <a class="product-list" href="#">
-                <img src="images/product-quadcopter.svg" alt="Квадрокоптеры" width="132" height="69">
+                <div class="catalog-image-container">
+                  <img src="images/product-quadcopter.svg" alt="Квадрокоптеры" width="132" height="69">
+                </div>
                 <h3 class="product-title">Квадрокоптеры</h3>
               </a>
             </li>
-         </ul>
+          </ul>
         </section>
       </div>
       <section class="service">
@@ -212,7 +226,7 @@
         <div class="service-container">
           <ul class="service-list-btn">
             <li class="service-item-btn">
-              <button class="service-btn button">Доставка</button>
+              <button class="service-btn service-active-btn button">Доставка</button>
             </li>
             <li class="service-item-btn">
               <button class="service-btn button">Гарантия</button>
@@ -274,17 +288,21 @@
           </section>
           <section class="contacts">
             <h2 class="about-company-title">Контакты</h2>
-            <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис.
+            <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис.<br>
               Заодно сможете проверить работоспособность покупки.
             </p>
             <h3 class="contacts-info">Интернет-магазин «Девайс»</h3>
-            <p class="adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            <h3 class="contacts-info">Время работы</h3>
-            <p class="working-time">
-              пн—пт: с 10:00 до 22:00
+            <div class="contacts-container">
+              <p class="address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </div>
+            <div class="working-time-container">
+              <h3 class="contacts-info">Время работы</h3>
+              <p class="working-time">
+              пн—пт: с 10:00 до 22:00<br>
               сб—вс: с 10:00 до 19:00
-            </p>
+              </p>
+            </div>
             <a class="about-company-link button" href="#" >Напишите нам</a>
           </section>
         </div>
@@ -292,42 +310,50 @@
       <section class="subscription">
         <div class="subscription-container">
           <h2 class="visually-hidden">Оформление подписки</h2>
-          <p class="subscription-slogan about-company-title"> Подпишитесь на рассылку</p>
-          <p class="subscripion-description">Еженедельный дайджест с обзорами новинок,
-            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-          <div class="subscription-form">
-            <form class="subscription-form-email" action="https://echo.htmlacademy.ru" method="post">
-              <input type="email" placeholder="Ваш e-mail" name="email">
-              <button class="subscription-button" type="submit">Подписаться</button>
-            </form>
+          <div class="subscription-slogan-container">
+            <p class="subscription-slogan about-company-title"> Подпишитесь на рассылку</p>
+            <p class="subscripion-description">Еженедельный дайджест с обзорами новинок,
+              длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           </div>
-          <p class="subscription-free">Это бесплатно</p>
+          <div class="subscription-form-container">
+            <div class="subscription-form">
+              <form class="subscription-form-email" action="https://echo.htmlacademy.ru" method="post">
+                <input type="email" placeholder="Ваш e-mail" name="email">
+                <button class="subscription-button" type="submit">Подписаться</button>
+              </form>
+            </div>
+            <p class="subscription-free">Это бесплатно</p>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="main-footer">
       <div class="main-footer-container">
-        <a class="footer-logo" href="index.html">
-          <img class="footer-logo-img" src="images/logo-footer.svg" alt="логотип" width="145" height="36">
-        </a>
-        <address class="footer-address">
-          <p class="footer-address-text">
-            Санкт-Петербург, набережная реки Карповки, 5, литера П.
-          </p>
-        </address>
-        <div class="footer-services">
-          <ul class="footer-services-list">
-            <li class="footer-services-item">
-              <a class="footer-services-link" href="#">Доставка</a>
-            </li>
-            <li class="footer-services-item">
-              <a class="footer-services-link" href="#">Гарантия</a>
-            </li>
-            <li class="footer-services-item">
-              <a class="footer-services-link" href="#">Контакты</a>
-            </li>
-          </ul>
+        <div class="footer-logo-container">
+          <a class="footer-logo" href="index.html">
+            <img class="footer-logo-img" src="images/logo-footer.svg" alt="логотип" width="145" height="36">
+          </a>
+        </div>
+        <div class="top-footer">
+          <address class="footer-address">
+            <p class="footer-address-text">
+              Санкт-Петербург, набережная реки Карповки, 5, литера П.
+            </p>
+          </address>
+          <div class="footer-services">
+            <ul class="footer-services-list">
+              <li class="footer-services-item">
+                <a class="footer-services-link" href="#">Доставка</a>
+              </li>
+              <li class="footer-services-item">
+                <a class="footer-services-link" href="#">Гарантия</a>
+              </li>
+              <li class="footer-services-item">
+                <a class="footer-services-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
           <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </div>
         <section class="footer-social">
