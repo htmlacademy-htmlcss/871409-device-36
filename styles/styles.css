@@ -705,6 +705,9 @@ body {
 }
 
 .service-info {
+  position: relative;
+  margin: 0;
+  width: 476px;
   padding-bottom: 144px;
 }
 
@@ -725,7 +728,7 @@ body {
 .guarantee-info::after {
   content: "";
   position: absolute;
-  right: 90px;
+  right: -220px;
   bottom: 134px;
   width: 171px;
   height: 195px;
@@ -735,7 +738,7 @@ body {
 .credit-info::after {
   content: "";
   position: absolute;
-  right: 90px;
+  right: -200px;
   bottom: 140px;
   width: 156px;
   height: 188px;
@@ -750,11 +753,6 @@ body {
   font-weight: 800;
   line-height: 50px;
   color: #000000;
-}
-
-.service-info {
-  margin: 0;
-  width: 476px;
 }
 
 .advantage-container {
@@ -1150,16 +1148,15 @@ body {
   outline: 2px solid #AF4FFF;
 }
 
-
-.htmlacademy-logo path:hover {
+.about-text:hover path {
   fill: #FFFFFF;
 }
 
-.htmlacademy-logo:active {
+.about-text:active {
   opacity: 0.3;
 }
 
-.htmlacademy-logo:focus {
+.about-text:focus {
   outline: 1px solid #AF4FFF;
 }
 
@@ -1490,12 +1487,9 @@ body {
   display: flex;
   width: 60px;
   padding-right: 40px;
-
 }
 
-
 .filter-arrow-up {
-
   width: 30px;
   height: 30px;
   left: 0;
@@ -1580,6 +1574,14 @@ body {
   display: block;
 }
 
+.product-card:hover .product-card-title {
+  opacity: 0.6;
+}
+
+.product-card:active .product-card-content {
+  opacity: 0.3;
+}
+
 .product-card-info {
   position: absolute;
   display: none;
@@ -1655,6 +1657,10 @@ body {
   opacity: 0.3;
 }
 
+.pagination-show-more:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .pagination-container {
   display: flex;
   justify-content: space-between;
@@ -1662,8 +1668,6 @@ body {
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 74px;
-  padding-right: 25px;
-  /*padding-left: 25px;*/
   text-transform: uppercase;
   background-color: #EBEBEB;
 }
@@ -1708,11 +1712,10 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 40px;
-  height: 40px;
 }
 
 .pagination-link {
+  padding: 10px 16px;
   opacity: 0.3;
   color: #444444;
   text-decoration: none;
@@ -1736,12 +1739,19 @@ body {
 }
 
 .pagination-next {
-  font-family: 'Raleway';
+  display: block;
+  padding: 25px;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  opacity: 1;
+  letter-spacing: 0.2em;
   color: #000000;
+  opacity: 1;
+}
+
+.pagination-next:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .modal {
@@ -2143,10 +2153,23 @@ body {
   opacity: 0.3;
 }
 
+.user-order-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.user-order-button:disabled {
+  opacity: 0.3;
+}
+
 .popover-active {
   display: block;
 }
 
 .popover-hidden {
   display: none;
+}
+
+.popover-link {
+  color: #000000;
+  text-decoration: none;
 }

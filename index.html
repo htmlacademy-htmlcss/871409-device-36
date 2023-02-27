@@ -72,7 +72,9 @@
                       <span>Товаров: 2</span>
                       <span>Сумма: 2000 ₽</span>
                     </div>
-                    <button class="user-order-button">Открыть корзину</button>
+                    <button class="user-order-button">
+                      <a class="popover-link" href="#">Открыть корзину</a>
+                    </button>
                 </div>
               </li>
             </ul>
@@ -459,9 +461,9 @@
     <section class="modal modal-delivery">
       <div class="modal-title-container">
         <h3 class="about-company-title modal-title">Доставка под заказ</h3>
-          <button class="modal-close-button">
-           <span class="visually-hidden">закрыть модальное окно</span>
-          </button>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">закрыть модальное окно</span>
+        </button>
       </div>
       <form class="modal-delivery-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-top-container">
@@ -471,7 +473,7 @@
           </p>
           <p class="user-email">
             <label class="modal-label" for="user-email">Ваш e-mail:</label>
-            <input type="text" class="modal-input user-email-input" id="user-email" name="user-email" placeholder="Ваш e-mail:">
+            <input type="email" class="modal-input user-email-input" id="user-email" name="user-email" placeholder="Ваш e-mail:">
             <span class="modal-error">Забавный у вас адрес</span>
           </p>
         </div>
@@ -483,7 +485,7 @@
           <div class="quantity">
             <label class="modal-label" for="user-quantity">Количество:</label>
               <span class="tooltip">
-                <button class="tooltip-toggle">
+                <button class="tooltip-toggle" type="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26"><circle cx="13" cy="13" r="13" fill="#FFE17F"/><path fill="#000" d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z"/></svg>
                 </button>
                 <span class="tooltip-text">
@@ -492,17 +494,17 @@
                 </span>
               </span>
               <div class="quantity-container">
-                <button class="quantity-button quantity-minus">
+                <button class="quantity-button quantity-minus" type="button">
                   <span class="visually-hidden">уменьшить Количество</span>
                 </button>
                 <input type="number" class="modal-input quantity-input" id="user-quantity" name="quantity" placeholder="1">
-                <button class="quantity-button quantity-plus">
+                <button class="quantity-button quantity-plus" type="button">
                   <span class="visually-hidden">увеличить Количество</span>
                 </button>
               </div>
           </div>
         </div>
-        <button class="button modal-button">Отправить</button>
+        <button class="button modal-button" type="button">Отправить</button>
       </form>
     </section>
     <script src="javascript/script.js"></script>
