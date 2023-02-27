@@ -1602,6 +1602,7 @@ body {
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
   color: #000000;
 }
