@@ -19,12 +19,12 @@
             <div class="header-search-container">
               <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
                 <label class="header-search-label" for="header-search"></label>
-                <input class="header-search-input" type="search" name="header-search" id="header-search" placeholder="Поиск по сайту">
+                <input class="header-search-input" type="search" name="header-search" id="header-search" placeholder="Текст поиска">
                 <button class="header-search-button" type="submit" value="Найти">Найти</button>
               </form>
             </div>
             <ul class="user-navigation">
-              <li class="user-navigation-item user-account">
+              <li class="user-account">
                 <a class="user-navigation-link" href="#">
                   <svg class="user-navigation-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="12" fill="none" viewBox="0 0 13 12"><path fill="#000" d="M0 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0A3.5 3.5 0 0 0 3 3.5c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 0 12Z"/></svg>
                   Коля Петухов
@@ -37,11 +37,47 @@
                   Сравнить
                 </a>
               </li>
-              <li class="user-navigation-item">
+              <li class="user-navigation-item basket">
                 <a class="user-navigation-link" href="#">
+                  <span class="badge">2</span>
                   <svg class="user-navigation-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><path fill="#000" d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"/></svg>
                   Корзина
                 </a>
+                <div class="popover popover-cart popover-hidden">
+                  <div class="popover-content">
+                    <ul class="cart-items-list">
+                      <li class="cart-item">
+                        <div class="cart-item-container">
+                          <img class="cart-img" src="images/product-1-mini.jpg" alt="Мини-изображение товара в корзине" width="39" height="43">
+                          <p class="cart-item-description">
+                            Любительская селфи-палка
+                          </p>
+                        </div>
+                        <button class="cart-item-button">
+                          <span class="visually-hidden">удалить товар из корзины</span>
+                        </button>
+                      </li>
+                      <li class="cart-item">
+                        <div class="cart-item-container">
+                          <img class="cart-img" src="images/product-2-mini.jpg" alt="Мини-изображение товара в корзине" width="39" height="43">
+                          <p class="cart-item-description">
+                            Профессиональная селфи-палка
+                          </p>
+                        </div>
+                        <button class="cart-item-button">
+                          <span class="visually-hidden">удалить товар из корзины</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                    <div class="user-order">
+                      <span>Товаров: 2</span>
+                      <span>Сумма: 2000 ₽</span>
+                    </div>
+                    <button class="user-order-button">
+                      <a class="popover-link" href="#">Открыть корзину</a>
+                    </button>
+                </div>
               </li>
             </ul>
           </div>
@@ -111,10 +147,10 @@
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <h3 class="filter-title">фильтр:</h3>
               <fieldset class="catalog-filter-group filter-price">
-                <legend class="catalog-filter-title">Стоимость</legend>
+                <legend class="catalog-filter-title price-filter">Стоимость</legend>
                 <div class="range">
                   <div class="range-scale">
-                    <div class="range-bar" style="left: 0; width: 136px">
+                    <div class="range-bar" style="left: 0; width: 119px">
                       <button class="range-toggle toggle-min">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
