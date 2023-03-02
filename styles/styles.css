@@ -54,7 +54,7 @@ body {
 .page-header {
   width: 1160px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 40px;
   color: #000000;
 }
 
@@ -122,25 +122,23 @@ body {
   width: 359px;
   padding-top: 8px;
   padding-left: 46px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   font-size: 16px;
   line-height: 20px;
-  outline: 2px solid #000000;
-  border: none;
+  border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
   background-color: #FFE17F;
 }
 
 .header-search-button {
-  width: 155px;
+  width: 158px;
   padding-top: 8px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   padding-left: 0;
   padding-right: 0;
   font-size: 16px;
   line-height: 20px;
-  outline: 2px solid #000000;
-  border: none;
+  border: 2px solid #000000;
   border-left: none;
   border-radius: 0 50px 50px 0;
   background-color: #FFE17F;
@@ -245,7 +243,7 @@ body {
 
 .popup-menu-link {
   position: relative;
-  width: 520px;
+  width: 524px;
 }
 
 .popup-menu-link::after {
@@ -253,8 +251,8 @@ body {
   content: "";
   width: 50px;
   height: 50px;
-  left: 240px;
-  top: -11px;
+  left: 242px;
+  top: -13px;
   border: 2px solid #000000;
   border-radius: 50%;
   background-image: url(../images/icon-plus.svg);
@@ -291,8 +289,8 @@ body {
   position: absolute;
   width: 1160px;
   left: -60px;
-  padding-top: 29px;
-  padding-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 34px;
   min-height: 120px;
   z-index: 5;
   background-color: #FFE17F;
@@ -331,7 +329,7 @@ body {
 .popular-goods-slider {
   position: relative;
   margin-bottom: 65px;
-  margin-top: -27px;
+  margin-top: -29px;
   background-image: linear-gradient(#FFE17F 116px, transparent 0%);
 }
 
@@ -396,7 +394,7 @@ body {
 }
 
 .catalog-item {
-  padding-bottom: 10px;
+  padding-bottom: 6px;
 }
 
 .catalog-item-link {
@@ -897,7 +895,7 @@ body {
 .transport-company-item {
   position: relative;
   margin-left: 37px;
-  font-family: 'Rubik';
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1030,7 +1028,8 @@ body {
   padding-top: 12px;
   padding-left: 18px;
   padding-bottom: 10px;
-  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
   line-height: 30px;
   border: none;
   border-bottom: 3px solid #C4C4C4;
@@ -1389,7 +1388,7 @@ body {
 }
 
 .catalog-filter-label {
-  font-family: 'Rubik';
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
@@ -1401,7 +1400,7 @@ body {
 }
 
 .range-input {
-  font-family: 'Rubik';
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   width: 55px;
   font-size: 14px;
@@ -1536,7 +1535,6 @@ body {
 .filter-button {
   width: 222px;
   margin: 0;
-  padding: 0;
   text-align: center;
   border: none;
   background-color: transparent;
@@ -1585,7 +1583,7 @@ body {
   height: 30px;
   border: none;
   border-radius: 0%;
-  font-family: 'Rubik';
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1830,7 +1828,12 @@ body {
 }
 
 .pagination-link {
-  padding: 10px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40px;
+  height: 40px;
   opacity: 0.3;
   color: #444444;
   text-decoration: none;
@@ -1842,7 +1845,7 @@ body {
 }
 
 .pagination-link:active {
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 .pagination-link:focus {
@@ -1853,16 +1856,30 @@ body {
   opacity: 0.6;
 }
 
+.pagination-disabled {
+  background-color: #EBEBEB;
+  opacity: 0.3;
+}
+
 .pagination-next {
   display: block;
-  padding: 25px;
+  padding: 23px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
   color: #000000;
+  text-decoration: none;
   opacity: 1;
+}
+
+.pagination-next:hover {
+  background-color: #DCDCDC;
+}
+
+.pagination-next:active {
+  opacity: 0.3;
 }
 
 .pagination-next:focus {
@@ -1935,7 +1952,7 @@ body {
 
 .modal-label {
   margin-bottom: 14px;
-  font-family: 'Rubik';
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1960,7 +1977,7 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 20px;
-  font-family: 'Rubik';
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1991,7 +2008,7 @@ body {
 }
 
 .modal-error {
-  font-family: 'Rubik';
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2082,7 +2099,7 @@ body {
   margin-bottom: 10px;
   width: 164px;
   padding: 19px 17px 10px 19px;
-  font-family: 'Rubik';
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2116,7 +2133,7 @@ body {
   box-sizing: border-box;
   width: 320px;
   min-height: 301px;
-  font-family: 'Rubik';
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -2225,7 +2242,7 @@ body {
   height: 21px;
   top: 4px;
   left: -15px;
-  font-family: 'Rubik';
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
