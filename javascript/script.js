@@ -12,7 +12,6 @@ sliderArrowLeft.onclick = function() {
         i = 2
     };
 
-
     if (i == 0) {
         slider[0].className = 'slider-item slider-item-active';
         slider[1].className = 'slider-item slider-item-hidden';
@@ -106,7 +105,7 @@ sliderArrowRight.onclick = function() {
 
 
 
-let modalDeliveryButton = document.querySelector('.advantage-info');
+let modalDeliveryButton = document.querySelector('.advantage-modal');
 let popup = document.querySelector('.modal-delivery');
 let modalDeliveryClose = popup.querySelector('.modal-close-button');
 let form = popup.querySelector('form');

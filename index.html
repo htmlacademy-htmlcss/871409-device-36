@@ -18,8 +18,12 @@
             <div class="header-search-container">
               <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
                 <label class="header-search-label" for="header-search"></label>
-                <input class="header-search-input" type="search" name="header-search" id="header-search" placeholder="Поиск по сайту">
-                <button class="header-search-button" type="submit" value="Найти">Найти</button>
+                <div class="header-search-input-wrapper">
+                  <input class="header-search-input" type="search" name="header-search" id="header-search" placeholder="Поиск по сайту">
+                </div>
+                <div class="header-search-button-wrapper">
+                  <button class="header-search-button" type="submit" value="Найти">Найти</button>
+                </div>
               </form>
             </div>
             <ul class="user-navigation">
@@ -36,7 +40,7 @@
                 </a>
               </li>
               <li class="user-navigation-item basket">
-                <a class="user-navigation-link" href="#">
+                <a class="user-navigation-link basket-link" href="#">
                   <span class="badge">2</span>
                   <svg class="user-navigation-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><path fill="#000" d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"/></svg>
                   Корзина
@@ -45,24 +49,24 @@
                   <div class="popover-content">
                     <ul class="cart-items-list">
                       <li class="cart-item">
-                        <div class="cart-item-container">
+                        <a class="cart-item-container" href="#">
                           <img class="cart-img" src="images/product-1-mini.jpg" alt="Мини-изображение товара в корзине" width="39" height="43">
                           <p class="cart-item-description">
                             Любительская селфи-палка
                           </p>
-                        </div>
-                        <button class="cart-item-button">
+                        </a>
+                        <button class="cart-item-button" type="button">
                           <span class="visually-hidden">удалить товар из корзины</span>
                         </button>
                       </li>
                       <li class="cart-item">
-                        <div class="cart-item-container">
+                        <a class="cart-item-container" href="#">
                           <img class="cart-img" src="images/product-2-mini.jpg" alt="Мини-изображение товара в корзине" width="39" height="43">
                           <p class="cart-item-description">
                             Профессиональная селфи-палка
                           </p>
-                        </div>
-                        <button class="cart-item-button">
+                        </a>
+                        <button class="cart-item-button" type="button">
                           <span class="visually-hidden">удалить товар из корзины</span>
                         </button>
                       </li>
@@ -72,16 +76,16 @@
                       <span>Товаров: 2</span>
                       <span>Сумма: 2000 ₽</span>
                     </div>
-                    <div class="user-order-button">
-                      <a class="popover-link" href="#">Открыть корзину</a>
-                    </div>
+                    <a class="user-order-button" href="#">
+                      <span class="popover-link">Открыть корзину</span>
+                    </a>
                 </div>
               </li>
             </ul>
           </div>
           <ul class="navigation-list">
             <li class="navigation-item popup-menu-link">
-              <a class="navigation-link" href="#">Каталог товаров</a>
+              <a class="navigation-link navigation-link-catalog" href="#">Каталог товаров</a>
               <div class="popup-menu">
                 <ul class="catalog-list column-1">
                   <li class="catalog-item">
@@ -145,7 +149,7 @@
               <p class="product-description">
                 Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
               </p>
-              <a class="product-details-btn button">Подробнее</a>
+              <a class="product-details-btn button" href="#">Подробнее</a>
               <ul class="product-charecteristics-list">
                 <li class="product-charecteristics-item">
                   <span class="characteristics-title">800 м</span>
@@ -171,7 +175,7 @@
               <p class="product-description">
                 Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
               </p>
-              <a class="product-details-btn button">Подробнее</a>
+              <a class="product-details-btn button" href="#">Подробнее</a>
               <ul class="product-charecteristics-list">
                 <li class="product-charecteristics-item">
                   <span class="characteristics-title">48 часов</span>
@@ -193,7 +197,7 @@
               <p class="product-description">
                 Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
               </p>
-              <a class="product-details-btn button">Подробнее</a>
+              <a class="product-details-btn button" href="#">Подробнее</a>
               <ul class="product-charecteristics-list">
                 <li class="product-charecteristics-item">
                   <span class="characteristics-title">8,5 м</span>
@@ -306,8 +310,8 @@
               <h3 class="service-title">Доставка</h3>
               <p class="service-info delivery-info">
                 Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно! Ведь
-                мы неплохо заработаем, поднимая его на ваш этаж.
+                к&nbsp;вашему подъезду совершенно бесплатно! Ведь
+                мы&nbsp;неплохо заработаем, поднимая его на ваш этаж.
               </p>
             </li>
 
@@ -332,15 +336,17 @@
       </section>
 
       <div class="advantage-container">
-        <p class="advantage-icon">
-          <span class="visually-hidden">доставка редкого товара</span>
-        </p>
-        <span class="advantage">
-          Доставим редкий товар под заказ
-        </span>
-        <button class="advantage-info">
-          <span class="visually-hidden">Информация о доставке</span>
-        </button>
+        <a class="advantage-modal" href="#">
+          <p class="advantage-icon">
+            <span class="visually-hidden">доставка редкого товара</span>
+          </p>
+          <span class="advantage">
+            Доставим редкий товар под заказ
+          </span>
+          <span class="advantage-info">
+            <span class="visually-hidden">Информация о доставке</span>
+          </span>
+        </a>
       </div>
       <section class="company-info">
         <div class="company-info-container">
@@ -474,7 +480,7 @@
           <p class="user-email">
             <label class="modal-label" for="user-email">Ваш e-mail:</label>
             <input type="email" class="modal-input user-email-input" id="user-email" name="user-email" placeholder="почта">
-            <span class="modal-error">Забавный у вас адрес</span>
+            <span class="modal-message modal-error">Забавный у вас адрес</span>
           </p>
         </div>
         <div class="modal-bottom-container">

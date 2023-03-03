@@ -18,8 +18,12 @@
             <div class="header-search-container">
               <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
                 <label class="header-search-label" for="header-search"></label>
-                <input class="header-search-input" type="search" name="header-search" id="header-search" placeholder="Текст поиска">
-                <button class="header-search-button" type="submit" value="Найти">Найти</button>
+                <div class="header-search-input-wrapper">
+                  <input class="header-search-input" type="search" name="header-search" id="header-search" placeholder="Поиск по сайту">
+                </div>
+                <div class="header-search-button-wrapper">
+                  <button class="header-search-button" type="submit" value="Найти">Найти</button>
+                </div>
               </form>
             </div>
             <ul class="user-navigation">
@@ -37,7 +41,7 @@
                 </a>
               </li>
               <li class="user-navigation-item basket">
-                <a class="user-navigation-link" href="#">
+                <a class="user-navigation-link basket-link" href="#">
                   <span class="badge">2</span>
                   <svg class="user-navigation-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><path fill="#000" d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"/></svg>
                   Корзина
@@ -82,14 +86,14 @@
           </div>
           <ul class="navigation-list">
             <li class="navigation-item popup-menu-link">
-              <a class="navigation-link" href="#">Каталог товаров</a>
+              <a class="navigation-link navigation-link-catalog" href="#">Каталог товаров</a>
               <div class="popup-menu">
                 <ul class="catalog-list column-1">
                   <li class="catalog-item">
                     <a class="catalog-item-link" href="#">Виртуальная реальность</a>
                   </li>
                   <li class="catalog-item">
-                    <a class="catalog-item-link" href="catalog.html">Моноподы для селфи</a>
+                    <a class="catalog-item-link catalog-item-link-active" href="catalog.html">Моноподы для селфи</a>
                   </li>
                   <li class="catalog-item">
                     <a class="catalog-item-link" href="#">Экшн-камеры</a>
@@ -241,62 +245,66 @@
                   <option value="popular">Дешевые</option>
                 </select>
                 <div class="filter-arrow">
-                  <a class="filter-arrow-up">
-                    <span class="visually-hidden">>По возрастанию</span>
-                  </a>
-                  <a class="filter-arrow-down">
-                    <span class="visually-hidden">>По убыванию</span>
-                  </a>
+                  <div class="filter-arrow-up-container">
+                    <a class="filter-arrow-up" href="#">
+                      <span class="visually-hidden">>По возрастанию</span>
+                    </a>
+                  </div>
+                  <div class="filter-arrow-down-container">
+                    <a class="filter-arrow-down" href="#">
+                      <span class="visually-hidden">>По убыванию</span>
+                    </a>
+                  </div>
                 </div>
               </div>
               <ul class="product-list-catalog">
                 <li class="product-card">
-                  <div class="product-card-link">
+                  <a class="product-card-link" href="#">
                     <img class="product-card-image" src="images/catalog-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
                     <div class="product-card-info">
-                      <a class="product-card-button" href="#">Подробнее</a>
+                      <span class="product-card-button">Подробнее</span>
                     </div>
                     <div class="product-card-content">
                       <h3 class="product-card-title">Любительская селфи-палка</h3>
                       <b class="product-card-price">500 ₽</b>
                     </div>
-                  </div>
+                  </a>
                 </li>
                 <li class="product-card">
-                  <div class="product-card-link">
+                  <a class="product-card-link" href="#">
                     <img class="product-card-image" src="images/catalog-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
                     <div class="product-card-info">
-                      <a class="product-card-button" href="#">Подробнее</a>
+                      <span class="product-card-button">Подробнее</span>
                     </div>
                     <div class="product-card-content">
                       <h3 class="product-card-title">Профессиональная селфи-палка </h3>
                       <b class="product-card-price">1 500 ₽</b>
                     </div>
-                  </div>
+                  </a>
                 </li>
                 <li class="product-card">
-                  <div class="product-card-link">
+                  <a class="product-card-link" href="#">
                     <img class="product-card-image" src="images/catalog-3.jpg" alt="Непотопляемая селфи-палкаа" width="360" height="380">
                     <div class="product-card-info">
-                      <a class="product-card-button" href="#">Подробнее</a>
+                      <span class="product-card-button">Подробнее</span>
                     </div>
                     <div class="product-card-content">
                       <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                       <b class="product-card-price">2 500 ₽</b>
                     </div>
-                  </div>
+                  </a>
                 </li>
                 <li class="product-card">
-                  <div class="product-card-link">
+                  <a class="product-card-link" href="#">
                     <img class="product-card-image" src="images/catalog-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
                     <div class="product-card-info">
-                      <a class="product-card-button" href="#">Подробнее</a>
+                      <span class="product-card-button">Подробнее</span>
                     </div>
                     <div class="product-card-content">
                       <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                       <b class="product-card-price">1 500 ₽</b>
                     </div>
-                  </div>
+                  </a>
                 </li>
               </ul>
               <button class="pagination-show-more" type="button">Загрузить ещё</button>
