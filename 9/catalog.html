@@ -20,7 +20,7 @@
               <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
                 <label class="header-search-label" for="header-search"></label>
                 <div class="header-search-input-wrapper">
-                  <input class="header-search-input" type="search" name="header-search" id="header-search" placeholder="Поиск по сайту">
+                  <input class="header-search-input" type="search" name="header-search" id="header-search" placeholder="Поиск по сайту" required>
                 </div>
                 <div class="header-search-button-wrapper">
                   <button class="header-search-button" type="submit" value="Найти">Найти</button>
@@ -51,24 +51,24 @@
                   <div class="popover-content">
                     <ul class="cart-items-list">
                       <li class="cart-item">
-                        <div class="cart-item-container">
+                        <a class="cart-item-container" href="#">
                           <img class="cart-img" src="images/product-1-mini.jpg" alt="Мини-изображение товара в корзине" width="39" height="43">
                           <p class="cart-item-description">
                             Любительская селфи-палка
                           </p>
-                        </div>
-                        <button class="cart-item-button">
+                        </a>
+                        <button class="cart-item-button" type="button">
                           <span class="visually-hidden">удалить товар из корзины</span>
                         </button>
                       </li>
                       <li class="cart-item">
-                        <div class="cart-item-container">
+                        <a class="cart-item-container" href="#">
                           <img class="cart-img" src="images/product-2-mini.jpg" alt="Мини-изображение товара в корзине" width="39" height="43">
                           <p class="cart-item-description">
                             Профессиональная селфи-палка
                           </p>
-                        </div>
-                        <button class="cart-item-button">
+                        </a>
+                        <button class="cart-item-button" type="button">
                           <span class="visually-hidden">удалить товар из корзины</span>
                         </button>
                       </li>
@@ -78,9 +78,9 @@
                       <span>Товаров: 2</span>
                       <span>Сумма: 2000 ₽</span>
                     </div>
-                    <div class="user-order-button">
-                      <a class="popover-link" href="#">Открыть корзину</a>
-                    </div>
+                    <a class="user-order-button" href="#">
+                      <span class="popover-link">Открыть корзину</span>
+                    </a>
                 </div>
               </li>
             </ul>
