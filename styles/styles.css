@@ -2146,7 +2146,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 64px;
-  margin-bottom: 23px;
+  margin-bottom: 40px;
 }
 
 .modal-title {
@@ -2178,7 +2178,6 @@ body {
 .modal-top-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 44px;
 }
 
 .modal-label {
@@ -2196,12 +2195,14 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .user-email {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .modal-input {
@@ -2235,6 +2236,7 @@ body {
 
 .user-email-input {
   width: 334px;
+  margin-bottom: 20px;
   border: none;
   opacity: 1;
 }
@@ -2263,6 +2265,7 @@ body {
 }
 
 .user-email-input:invalid {
+  margin: 0;
   outline: 2px solid #FF3D3D;
 }
 
@@ -2301,6 +2304,7 @@ body {
 .modal-bottom-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 42px;
   margin-bottom: 42px;
   align-items: center;
 }
