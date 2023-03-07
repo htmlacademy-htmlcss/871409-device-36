@@ -29,7 +29,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-width: 1440px;
+  min-width: 1260px;
   min-height: 100%;
   margin: 0;
   font-family: "Rubik", sans-serif;
