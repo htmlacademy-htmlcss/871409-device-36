@@ -78,7 +78,7 @@
                     <span>Сумма: 2000 ₽</span>
                   </div>
                   <a class="user-order-button" href="#">
-                    <span class="popover-link">Открыть корзину</span>
+                    Открыть корзину
                   </a>
                 </div>
               </li>
@@ -298,13 +298,13 @@
         <div class="service-container">
           <ul class="service-list-btn">
             <li class="service-item-btn">
-              <button class="service-btn service-active-btn delivery-button">Доставка</button>
+              <button class="service-btn service-active-btn delivery-button" type="button">Доставка</button>
             </li>
             <li class="service-item-btn">
-              <button class="service-btn service-hidden-btn guarantee-button">Гарантия</button>
+              <button class="service-btn service-hidden-btn guarantee-button" type="button">Гарантия</button>
             </li>
             <li class="service-item-btn">
-              <button class="service-btn service-hidden-btn credit-button">Кредит</button>
+              <button class="service-btn service-hidden-btn credit-button" type="button">Кредит</button>
             </li>
           </ul>
           <ul class="service-list">
@@ -339,15 +339,10 @@
 
       <div class="advantage-container">
         <a class="advantage-modal" href="#">
-          <p class="advantage-icon">
-            <span class="visually-hidden">доставка редкого товара</span>
-          </p>
-          <span class="advantage">
-            Доставим редкий товар под заказ
-          </span>
-          <span class="advantage-info">
-            <span class="visually-hidden">Информация о доставке</span>
-          </span>
+        Доставим редкий товар под заказ
+        <span class="advantage-info">
+          <span class="visually-hidden">Информация о доставке</span>
+        </span>
         </a>
       </div>
       <section class="company-info">
@@ -478,7 +473,7 @@
         <div class="modal-top-container">
           <p class="user-name">
             <label class="modal-label" for="user-name">Ваше имя:</label>
-            <input type="text" class="modal-input user-name-input" id="user-name" name="user-name" placeholder="Введите имя">
+            <input type="text" class="modal-input user-name-input" id="user-name" name="user-name" placeholder="Введите имя" required>
           </p>
           <p class="user-email">
             <label class="modal-label" for="user-email">Ваш e-mail:</label>
@@ -489,7 +484,7 @@
         <div class="modal-bottom-container">
           <p class="user-message">
             <label class="modal-label" for="user-message">Что нужно привезти:</label>
-            <input type="text" class="modal-input user-message-input" id="user-message" name="user-message" placeholder="В свободной форме">
+            <input type="text" class="modal-input user-message-input" id="user-message" name="user-message" placeholder="В свободной форме" required>
           </p>
           <div class="quantity">
             <label class="modal-label" for="user-quantity">Количество:</label>
@@ -506,7 +501,7 @@
               <button class="quantity-button quantity-minus" type="button">
                 <span class="visually-hidden">уменьшить Количество</span>
               </button>
-              <input type="number" class="modal-input quantity-input" id="user-quantity" name="quantity" placeholder="1">
+              <input type="number" class="modal-input quantity-input" id="user-quantity" name="quantity" placeholder="1" required>
               <button class="quantity-button quantity-plus" type="button">
                 <span class="visually-hidden">увеличить Количество</span>
               </button>
