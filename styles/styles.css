@@ -938,7 +938,7 @@ body {
   position: relative;
   display: block;
   font-family: "Raleway", sans-serif;
-  padding: 40px 150px 40px 150px;
+  padding: 40px 150px 38px 150px;
   font-size: 20px;
   line-height: 23px;
   text-transform: uppercase;
@@ -974,7 +974,7 @@ body {
   position: absolute;
   content: "";
   top: calc(50% - 20px);
-  right: 25px;
+  right: 42px;
   width: 40px;
   height: 40px;
   background-color: rgba(220, 220, 220, 0.5);
